@@ -7,7 +7,9 @@ public class Test3 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("springContext.xml");
 
-        context.getBean("myPerson", Person.class).callPet();
+        Person person = context.getBean("myPerson", Person.class);
+        person.callPet();
+        System.out.printf("Hello, my surname is %s, my age is %d%n", person.getSurname(), person.getAge());
 
         context.close();
     }

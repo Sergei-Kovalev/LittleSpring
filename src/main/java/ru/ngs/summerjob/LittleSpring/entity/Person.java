@@ -1,10 +1,32 @@
 package ru.ngs.summerjob.LittleSpring.entity;
 
 public class Person {
-    private final Pet pet;
+    private Pet pet;
+    private String surname;
+    private int age;
 
-    public Person(Pet pet) {
+    public Person() {
+    }
+
+    public void setPet(Pet pet) {
+        System.out.println("Pet set in class Person");
         this.pet = pet;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void callPet() {

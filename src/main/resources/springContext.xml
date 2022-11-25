@@ -13,6 +13,10 @@
 
     <bean id="myPerson"
           class="ru.ngs.summerjob.LittleSpring.entity.Person">
-        <constructor-arg ref="myPet"/>
+        <property name="pet" ref="myPet"/>
+
+        <property name="surname" value="Petrov"/>
+        <property name="age" value="33"/>
+
     </bean>
 </beans>
