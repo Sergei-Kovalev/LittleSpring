@@ -9,7 +9,9 @@
 
     <bean id="myPet"
           class="ru.ngs.summerjob.LittleSpring.entity.Dog"
-    scope="prototype">
+          init-method="init"
+          destroy-method="destroy"
+          scope="prototype">
     </bean>
 
 </beans>
