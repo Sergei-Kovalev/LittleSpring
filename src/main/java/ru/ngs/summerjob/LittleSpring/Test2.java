@@ -1,6 +1,7 @@
-package ru.ngs.summerjob.LittleSpring.entity;
+package ru.ngs.summerjob.LittleSpring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import ru.ngs.summerjob.LittleSpring.entity.Pet;
 
 public class Test2 {
     public static void main(String[] args) {

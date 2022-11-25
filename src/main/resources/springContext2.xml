@@ -6,18 +6,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:myApp.properies"/>
 
     <bean id="myPet"
-          class="ru.ngs.summerjob.LittleSpring.entity.Dog">
+          class="ru.ngs.summerjob.LittleSpring.entity.Dog"
+    scope="prototype">
     </bean>
 
-    <bean id="myPerson"
-          class="ru.ngs.summerjob.LittleSpring.entity.Person">
-        <property name="pet" ref="myPet"/>
-
-        <property name="surname" value="${person.surname}"/>
-        <property name="age" value="${person.age}"/>
-
-    </bean>
 </beans>
