@@ -1,7 +1,6 @@
 package ru.ngs.summerjob.LittleSpring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.ngs.summerjob.LittleSpring.entity.Cat;
 import ru.ngs.summerjob.LittleSpring.entity.Person;
 
 public class ConfigWithAnnotations1 {
@@ -14,6 +13,7 @@ public class ConfigWithAnnotations1 {
         Person person = context.getBean("person", Person.class);
 
         person.callPet();
+        System.out.printf("My surname: %s. I'm %d years old \n", person.getSurname(), person.getAge());
 
         context.close();
     }

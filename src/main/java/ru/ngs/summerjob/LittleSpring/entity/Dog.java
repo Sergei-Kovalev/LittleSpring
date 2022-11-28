@@ -1,5 +1,8 @@
 package ru.ngs.summerjob.LittleSpring.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Dog implements Pet {
 //    private String name;
 
