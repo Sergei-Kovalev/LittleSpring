@@ -8,7 +8,7 @@ import ru.ngs.summerjob.LittleSpring.entity.Pet;
 
 @Configuration
 //@ComponentScan("ru.ngs.summerjob.LittleSpring.entity")
-@PropertySource({"myApp.properies"})
+@PropertySource({"classpath:myApp.properies"})
 public class MyConfig {
 
     @Bean
