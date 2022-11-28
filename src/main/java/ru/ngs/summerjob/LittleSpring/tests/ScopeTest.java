@@ -1,4 +1,4 @@
-package ru.ngs.summerjob.LittleSpring;
+package ru.ngs.summerjob.LittleSpring.tests;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.ngs.summerjob.LittleSpring.entity.Dog;

@@ -1,4 +1,4 @@
-package ru.ngs.summerjob.LittleSpring;
+package ru.ngs.summerjob.LittleSpring.tests;
 
 import ru.ngs.summerjob.LittleSpring.entity.Dog;
 import ru.ngs.summerjob.LittleSpring.entity.Pet;

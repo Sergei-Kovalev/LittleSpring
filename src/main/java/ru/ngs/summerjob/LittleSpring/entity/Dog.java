@@ -4,7 +4,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 //@Scope("prototype")
 public class Dog implements Pet {
 //    private String name;
