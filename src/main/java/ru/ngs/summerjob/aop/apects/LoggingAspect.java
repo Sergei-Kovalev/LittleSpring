@@ -8,9 +8,14 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAspect {
 
-    @Before("execution(public void getBook())")
+    @Before("execution(public void getBook(ru.ngs.summerjob.aop.entity.Book))")
     public void beforeGetBookAdvice() {                                         //Advice указывает что это метод внутри аспект класса
         System.out.println("beforeGetBookAdvice(): trying to get a book");
     }
+//
+//    @Before("execution(* returnBook())")
+//    public void beforeReturnBookAdvice() {                                         //Advice указывает что это метод внутри аспект класса
+//        System.out.println("beforeReturnBookAdvice(): trying to return a book");
+//    }
 
 }
