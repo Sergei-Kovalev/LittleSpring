@@ -1,8 +1,7 @@
-package ru.ngs.summerjob.LittleSpring.entity;
+package ru.ngs.summerjob.spring_entrance.entity;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
-import org.springframework.stereotype.Component;
 
 //@Component
 //@Scope("prototype")

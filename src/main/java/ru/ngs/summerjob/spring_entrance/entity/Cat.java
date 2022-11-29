@@ -1,6 +1,4 @@
-package ru.ngs.summerjob.LittleSpring.entity;
-
-import org.springframework.stereotype.Component;
+package ru.ngs.summerjob.spring_entrance.entity;
 
 //@Component("catBean")                       // если не указать id в скобках - присвоится дефолтный id = название класса с маленькой буквы
 public class Cat implements Pet {

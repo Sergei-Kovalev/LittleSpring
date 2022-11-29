@@ -1,10 +1,10 @@
-package ru.ngs.summerjob.LittleSpring;
+package ru.ngs.summerjob.spring_entrance;
 
 
 import org.springframework.context.annotation.*;
-import ru.ngs.summerjob.LittleSpring.entity.Cat;
-import ru.ngs.summerjob.LittleSpring.entity.Person;
-import ru.ngs.summerjob.LittleSpring.entity.Pet;
+import ru.ngs.summerjob.spring_entrance.entity.Cat;
+import ru.ngs.summerjob.spring_entrance.entity.Person;
+import ru.ngs.summerjob.spring_entrance.entity.Pet;
 
 @Configuration
 //@ComponentScan("ru.ngs.summerjob.LittleSpring.entity")

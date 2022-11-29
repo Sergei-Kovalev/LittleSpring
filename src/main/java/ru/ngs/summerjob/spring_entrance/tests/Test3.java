@@ -1,7 +1,7 @@
-package ru.ngs.summerjob.LittleSpring.tests;
+package ru.ngs.summerjob.spring_entrance.tests;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.ngs.summerjob.LittleSpring.entity.Person;
+import ru.ngs.summerjob.spring_entrance.entity.Person;
 
 public class Test3 {
     public static void main(String[] args) {

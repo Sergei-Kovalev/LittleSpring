@@ -1,4 +1,4 @@
-package ru.ngs.summerjob.LittleSpring;
+package ru.ngs.summerjob.spring_entrance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

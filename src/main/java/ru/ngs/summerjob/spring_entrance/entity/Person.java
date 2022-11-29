@@ -1,9 +1,6 @@
-package ru.ngs.summerjob.LittleSpring.entity;
+package ru.ngs.summerjob.spring_entrance.entity;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 //@Component("person")
 public class Person {

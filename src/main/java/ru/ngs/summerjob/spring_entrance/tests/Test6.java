@@ -1,10 +1,8 @@
-package ru.ngs.summerjob.LittleSpring.tests;
+package ru.ngs.summerjob.spring_entrance.tests;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.ngs.summerjob.LittleSpring.MyConfig;
-import ru.ngs.summerjob.LittleSpring.entity.Cat;
-import ru.ngs.summerjob.LittleSpring.entity.Person;
-import ru.ngs.summerjob.LittleSpring.entity.Pet;
+import ru.ngs.summerjob.spring_entrance.MyConfig;
+import ru.ngs.summerjob.spring_entrance.entity.Person;
 
 public class Test6 {
 
