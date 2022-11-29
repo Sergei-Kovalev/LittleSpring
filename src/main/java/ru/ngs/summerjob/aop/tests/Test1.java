@@ -2,8 +2,6 @@ package ru.ngs.summerjob.aop.tests;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import ru.ngs.summerjob.aop.MyConfig;
-import ru.ngs.summerjob.aop.entity.Book;
-import ru.ngs.summerjob.aop.entity.SchoolLibrary;
 import ru.ngs.summerjob.aop.entity.UniLibrary;
 
 public class Test1 {
@@ -16,7 +14,8 @@ public class Test1 {
         UniLibrary library1 = context.getBean("uniLibrary", UniLibrary.class);
         library1.getBook();
 //        library1.returnBook();
-        library1.getMagazine();
+        library1.returnMagazine();
+        library1.addBook();
 
 
 //
