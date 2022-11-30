@@ -1,9 +1,6 @@
 package ru.ngs.summerjob.aop.apects;
 
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 import ru.ngs.summerjob.aop.entity.Student;
 
@@ -32,9 +29,10 @@ public class UniversityLoggingAspect {
 //
 //        System.out.println("afterGetStudentsLoggingAdvice(): logging getting a list of students after running method getStudents()");
 //    }
+//
 
-    @AfterThrowing(pointcut = "execution(* getStudents())", throwing = "exception")
-    public void afterThrowingGetStudentsLoggingAdvice(Throwable exception) {
-        System.out.println("afterThrowingGetStudentsLoggingAdvice(): Logging throwing of exception: " + exception);
+    @After("execution(* getStudents())")
+    public void afterGetStudentsLoggingAdvice() {
+        System.out.println("afterGetStudentsLoggingAdvice(): Logging normal ending of method or exception ending");
     }
 }
