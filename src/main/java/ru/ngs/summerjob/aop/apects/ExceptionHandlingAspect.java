@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 @Order(3)
 public class ExceptionHandlingAspect {
 
-    @Before("ru.ngs.summerjob.aop.apects.MyPointcuts.allGetMethods()")
+    @Before("ru.ngs.summerjob.aop.apects.MyPointcuts.allAddMethods()")
     public void beforeGetExceptionHandlingAdvice() {
-        System.out.println("beforeGetExceptionHandlingAdvice(): Catch exception when trying to take a book/magazine");
+        System.out.println("beforeAddExceptionHandlingAdvice(): Catch exception when trying to take a book/magazine");
+        System.out.println("---------------------------------------------");
     }
 }
