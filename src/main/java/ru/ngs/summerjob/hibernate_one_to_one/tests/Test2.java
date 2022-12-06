@@ -1,10 +1,10 @@
-package ru.ngs.summerjob.hibernate_test2.tests;
+package ru.ngs.summerjob.hibernate_one_to_one.tests;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import ru.ngs.summerjob.hibernate_test2.entity.Detail;
-import ru.ngs.summerjob.hibernate_test2.entity.Employee;
+import ru.ngs.summerjob.hibernate_one_to_one.entity.Detail;
+import ru.ngs.summerjob.hibernate_one_to_one.entity.Employee;
 
 public class Test2 {
     public static void main(String[] args) {

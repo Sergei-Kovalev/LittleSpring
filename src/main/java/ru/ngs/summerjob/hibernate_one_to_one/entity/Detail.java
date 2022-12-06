@@ -1,4 +1,4 @@
-package ru.ngs.summerjob.hibernate_test2.entity;
+package ru.ngs.summerjob.hibernate_one_to_one.entity;
 
 import jakarta.persistence.*;
 
