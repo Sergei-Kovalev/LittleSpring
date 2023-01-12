@@ -1,12 +1,15 @@
 package ru.ngs.summerjob.hibernate_test.tests;
 
 import jakarta.persistence.Query;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaUpdate;
+import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.MutationQuery;
+import org.hibernate.query.SelectionQuery;
 import ru.ngs.summerjob.hibernate_test.entity.Employee;
-
-import java.util.List;
 
 public class Test4 {
     public static void main(String[] args) {
@@ -22,8 +25,8 @@ public class Test4 {
 //            Employee employee = session.get(Employee.class, 1);
 //            employee.setSalary(999);
 
-            Query query = session.createQuery("UPDATE Employee SET salary = 888 WHERE name = :name");
-            query.setParameter("name", "Alexander");
+            MutationQuery query = session.createMutationQuery("UPDATE Employee SET salary = 999 WHERE name = :name");
+            query.setParameter("name", "Petia");
             query.executeUpdate();
 //            session.createQuery("UPDATE Employee SET salary = 777 WHERE name = 'Alexander'")
 //                    .executeUpdate();
