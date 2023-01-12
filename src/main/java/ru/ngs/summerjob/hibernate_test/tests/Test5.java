@@ -21,11 +21,13 @@ public class Test5 {
 
 //            Employee employee = session.get(Employee.class, 0);
 //            session.remove(employee);
+//
+//            List<Employee> resultList = session.createQuery("from Employee WHERE name = 'Oleg'", Employee.class).getResultList();
+//            for (Employee e : resultList) {
+//                session.remove(e);
+//            }
 
-            List<Employee> resultList = session.createQuery("from Employee WHERE name = 'Oleg'", Employee.class).getResultList();
-            for (Employee e : resultList) {
-                session.remove(e);
-            }
+            session.createMutationQuery("DELETE Employee WHERE name = 'Elena'").executeUpdate();
 
             session.getTransaction().commit();
 
